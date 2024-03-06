@@ -38,7 +38,7 @@ const Signup = (props) => {
         <h2>Create an account to continue to iNotebook</h2>
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
-            <label htmlFor="name" className="form-label">Email address</label>
+            <label htmlFor="name" className="form-label">Your Name</label>
             <input type="text" className="form-control" id="name" name='name' onChange={onChange} aria-describedby="emailHelp"/>
         </div>
         <div className="mb-3">

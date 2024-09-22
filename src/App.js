@@ -8,6 +8,7 @@ import Alert from './components/Alert';
 import Login from './components/Login';
 import Signup from './components/Signup';
 import { useState } from 'react';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
             <Route exact path='/signup' element={<Signup showAlert={showAlert}/>}/>
           </Routes>
         </div>
+        {/* <Footer/> */}
       </Router>
     </NoteState>
     </>

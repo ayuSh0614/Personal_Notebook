@@ -21,15 +21,15 @@ const AddNote = (props) => {
       <form className='my-3'>
         <div className="mb-3">
           <label htmlFor="tltle" className="form-label">Title</label>
-          <input type="text" value={note.title} className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange={onChange} minLength={5} required/>
+          <input type="text" placeholder='Type Something...' value={note.title} className="form-control" id="title" name="title" aria-describedby="emailHelp" onChange={onChange} minLength={5} required/>
         </div>
         <div className="mb-3">
           <label htmlFor="description" className="form-label">Description</label>
-          <input type="text" value={note.description} className="form-control" id="description" name="description" onChange={onChange} minLength={5} required/>
+          <input type="text" value={note.description} placeholder='Anything in your mind...' className="form-control" id="description" name="description" onChange={onChange} minLength={5} required/>
         </div>
         <div className="mb-3">
-          <label htmlFor="tag" className="form-label">tag</label>
-          <input type="text" value={note.tag} className="form-control" id="tag" name="tag" onChange={onChange} minLength={5} required/>
+          <label htmlFor="tag" className="form-label">Tag</label>
+          <input type="text" value={note.tag} placeholder='#...' className="form-control" id="tag" name="tag" onChange={onChange} minLength={5} required/>
         </div>
         
         <button disabled={note.title.length<5 || note.description.length<5} type="submit" className="btn btn-primary" onClick={handleClick}>Add Note</button>
